@@ -1,0 +1,13 @@
+{ 
+    "imposters": [
+        {
+            "port": 4000, 
+            "protocol": "graphql",
+            "name": "GraphQL-Mock",
+            "schemaEndpoint": "http://0.0.0.0:8080/graphql",
+            "stubs": [
+                <% include ./src/stubs/service.ejs %>
+            ] 
+        }
+    ]
+}
